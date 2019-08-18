@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author guilherme
  */
-@WebServlet(name = "JurosCompostoCalculo", urlPatterns = {"/juroscompostocalculo"})
+@WebServlet(name = "JurosCompostoCalculo", urlPatterns = {"/juroscompostocalculo.html"})
 public class JurosCompostoCalculo extends HttpServlet {
 
     /**
@@ -34,16 +34,27 @@ public class JurosCompostoCalculo extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
+             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
             out.println("<title>Juros Compostos</title>");            
             out.println("</head>");
-            out.println("<h1>Juros Compostos</h1>");
-            out.println("<body>");
             
-           
-               
+            out.println("<body>");
+            out.println("<h4><a href= 'home.html'>Home</a></h4>");
+            out.println("<h1>Juro Composto Cálculo </h1>");
+            
+            out.println("<form action ='juroscomposto.html' method = 'get'>");
+            out.println("Capital"+"<br>");
+            out.println("<input type = 'text' name = 'c' /> <br> ");
+            out.println("Taxa mensal (a.m)"+"<br>");
+            
+            out.println("<input type =\"text\" name=\"i\"/><br>");
+            out.println("período mensal <br>");
+            out.println("<input type =\"text\" name=\"n\"/><br> <br>");
+            out.println("<input type =\"submit\" value=\"calcular\"/>");
+            out.println("</form>");
+            
             out.println("<h1>Servlet JurosCompostoCalculo at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");

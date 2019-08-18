@@ -41,7 +41,8 @@ public class JurosComposto extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             
-            out.println("<h4><a href= 'index.html'>Voltar</a></h4>");
+            out.println("<h4><a href= 'home.html'>Home</a></h4>");
+            out.println("<h4><a href= 'juroscompostocalculo.html'>Voltar</a></h4>");
             out.println("<h1>Java EE</h1>");
             out.println("<h2>Cálculo Juro Composto</h2>");
             

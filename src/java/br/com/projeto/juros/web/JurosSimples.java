@@ -39,8 +39,8 @@ public class JurosSimples extends HttpServlet {
             out.println("<head>");
             out.println("<title>Servlet JurosSimples</title>");            
             out.println("</head>");
-            
-            out.println("<h4><a href= 'index.html'>Voltar</a></h4>");
+            out.println("<h4><a href= 'home.html'>Home</a></h4>");
+            out.println("<h4><a href= 'jurossimplescalculo.html'>Voltar</a></h4>");
             out.println("<h1>Java EE</h1>");
             out.println("<h2>Cálculo Juro simples</h2>");
             
@@ -53,8 +53,8 @@ public class JurosSimples extends HttpServlet {
                     
                      m = (c * i * n);
                      
-                    out.println("Aplicação inicial "+c);
-                    out.println("O montante é "+m + c);
+                    out.println("Aplicação inicial "+c+"<br>");
+                    out.println("O montante é "+m + c+"após "+n+" meses");
               
                 
             }
