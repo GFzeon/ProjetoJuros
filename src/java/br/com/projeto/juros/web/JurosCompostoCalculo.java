@@ -45,17 +45,17 @@ public class JurosCompostoCalculo extends HttpServlet {
             out.println("<h1>Juro Composto Cálculo </h1>");
             
             out.println("<form action ='juroscomposto.html' method = 'get'>");
-            out.println("Capital"+"<br>");
-            out.println("<input type = 'text' name = 'c' /> <br> ");
-            out.println("Taxa mensal (a.m)"+"<br>");
+            out.println("Digite o capital aplicado"+"<br>");
+            out.println("<input type = 'text' name = 'c' /> <br><br> ");
+            out.println("Digite a taxa de juros"+"<br>");
             
-            out.println("<input type =\"text\" name=\"i\"/><br>");
-            out.println("período mensal <br>");
+            out.println("<input type =\"text\" name=\"i\"/><br><br>");
+            out.println("Digite o período<br>");
             out.println("<input type =\"text\" name=\"n\"/><br> <br>");
             out.println("<input type =\"submit\" value=\"calcular\"/>");
             out.println("</form>");
             
-            out.println("<h1>Servlet JurosCompostoCalculo at " + request.getContextPath() + "</h1>");
+            
             out.println("</body>");
             out.println("</html>");
         }

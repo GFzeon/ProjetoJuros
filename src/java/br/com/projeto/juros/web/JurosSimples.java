@@ -41,8 +41,7 @@ public class JurosSimples extends HttpServlet {
             out.println("</head>");
             out.println("<h4><a href= 'home.html'>Home</a></h4>");
             out.println("<h4><a href= 'jurossimplescalculo.html'>Voltar</a></h4>");
-            out.println("<h1>Java EE</h1>");
-            out.println("<h2>Cálculo Juro simples</h2>");
+            out.println("<h1>Cálculo Juro simples</h1>");
             
             try{
                 double m = 0;
@@ -54,7 +53,9 @@ public class JurosSimples extends HttpServlet {
                      m = (c * i * n);
                      
                     out.println("Aplicação inicial "+c+"<br>");
-                    out.println("O montante é "+m + c+"após "+n+" meses");
+                    out.println("O Juros da aplicação "+m+"<br>");
+                    m = m +c;
+                    out.println("O montante é "+m +" após "+n+" meses");
               
                 
             }
@@ -64,7 +65,7 @@ public class JurosSimples extends HttpServlet {
             }
             
             out.println("<body>");
-            out.println("<h1>Servlet JurosSimples at " + request.getContextPath() + "</h1>");
+           
             out.println("</body>");
             out.println("</html>");
         }

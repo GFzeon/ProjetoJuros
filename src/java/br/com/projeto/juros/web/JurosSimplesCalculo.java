@@ -40,30 +40,21 @@ public class JurosSimplesCalculo extends HttpServlet {
             out.println("<title>Servlet JurosSimplesCalculo</title>");            
             out.println("</head>");
             out.println("<body>");
+            
             out.println("<h4><a href= 'home.html'>Home</a></h4>");
             out.println("<h1>Cálculos juros simples</h1>");
+            
             out.println("<form action=\"juros-simples.html\" method=\"get\">");
-            out.println("Capital <br>");
+            out.println("Digite o capital aplicado <br>");
             out.println("<input type =\"text\" name=\"c\"/><br>");
-            out.println("taxa<br>");
+            out.println("Digite a taxa de juros<br>");
             out.println("<input type =\"text\" name=\"i\"/><br>");
-            out.println("período<br>");
+            out.println("Digite o período de tempo<br>");
             out.println("<input type =\"text\" name=\"n\"/><br><br>");
             out.println("<input type =\"submit\" value=\"Calcular\"/>");
             out.println("</form>");
             
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            out.println("<h1>Servlet JurosSimplesCalculo at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }

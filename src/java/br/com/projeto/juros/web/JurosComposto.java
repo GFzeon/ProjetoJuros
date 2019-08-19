@@ -12,6 +12,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.lang.Math;
+import java.text.DecimalFormat;
 
 /**
  *
@@ -43,8 +45,9 @@ public class JurosComposto extends HttpServlet {
             
             out.println("<h4><a href= 'home.html'>Home</a></h4>");
             out.println("<h4><a href= 'juroscompostocalculo.html'>Voltar</a></h4>");
-            out.println("<h1>Java EE</h1>");
-            out.println("<h2>Cálculo Juro Composto</h2>");
+            out.println("<h1>Cálculo Juro Composto</h1>");
+            
+            DecimalFormat df = new DecimalFormat("#.00");
             
             try{
                 double m = 0;
@@ -68,7 +71,7 @@ public class JurosComposto extends HttpServlet {
                      
                     out.println("<tr>");
                     out.println("<th>"+j+"</th>");
-                    out.println("<td>"+m+"</td>");
+                    out.println("<td>"+df.format(m)+"</td>");
                     out.println("</tr");
                     
                 }
@@ -80,7 +83,7 @@ public class JurosComposto extends HttpServlet {
             
             }
             
-            out.println("<h1>Servlet JurosComposto at " + request.getContextPath() + "</h1>");
+            
             out.println("</body>");
             out.println("</html>");
         }

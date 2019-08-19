@@ -40,13 +40,13 @@ public class Home extends HttpServlet {
             out.println("<title>Home</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Grupo<br>Guilherme Fábio, Lucca, Leonardo Candido</h1>");
-            out.println("<h2><a href= 'jurossimplescalculo.html'>Juros Simples</a></h2>");
-            out.println("<h2><a href= 'juroscompostocalculo.html'>Juros Composto</a></h2>");
+            out.println("<h1>Grupo</h1><h2>Guilherme Fábio Gaspar Ferreira <br> Lucca Rodrigues Zangelmi <br> Leonardo Candido Calcagniti</h2>");
+            out.println("<h3><a href= 'jurossimplescalculo.html'>Juros Simples</a></h3>");
+            out.println("<h3><a href= 'juroscompostocalculo.html'>Juros Composto</a></h3>");
            
           
             
-            out.println("<h1>Servlet Home at " + request.getContextPath() + "</h1>");
+            
             out.println("</body>");
             out.println("</html>");
         }
